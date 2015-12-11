@@ -1,0 +1,40 @@
+{
+  "name": "lag/array-utils",
+  "type": "library",
+  "description": "PHP array utils functions",
+  "keywords": ["array", "utils", "recursive implode"],
+  "homepage": "https://github.com/larriereguichet",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arnaud Frezet",
+      "email": "arnaudfrezet@gmail.com"
+    },
+    {
+      "name": "Johan Dufour",
+      "email": "johan.dufour@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.7.*"
+  },
+  "autoload": {
+    "files": [ "Resources/functions/recursiveImplode.php" ],
+    "psr-4": { "LAG\\Component\\ArrayUtils\\": "" },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}
